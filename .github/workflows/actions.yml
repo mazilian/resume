@@ -58,7 +58,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add static
+          git add .
           git diff-index --quiet HEAD || (git commit -a -m "updated PDFs" --allow-empty)
           
       - name: push changes
